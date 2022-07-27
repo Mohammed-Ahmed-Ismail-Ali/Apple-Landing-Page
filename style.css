@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: black;
+}
+
+.container {
+  width: 85%;
+  margin-top: 15px;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header a img{
+  width: 40%;
+}
+
+.container header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.container header ul li {
+  padding: 8px 15px;
+}
+
+.container header ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.container header ul li a:hover {
+  color: rgb(131, 131, 131);
+}
+
+.container section {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  color: white;
+}
+
+.container section h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.container section p {
+  max-width: 70%;
+  letter-spacing: 1px;
+}
+
+.container section a {
+  color: black;
+  text-decoration: none;
+  padding: 6px 12px;
+  background-color: white;
+  display: block;
+  width: fit-content;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+.container section a:hover {
+  background-color: black;
+  color: white;
+}
+
+.container section .img img {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.container .photo-changer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.container .photo-changer img {
+  width: 50px;
+}
