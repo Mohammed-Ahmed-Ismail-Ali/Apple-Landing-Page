@@ -13,16 +13,19 @@ body {
 .container {
   width: 85%;
   margin-top: 15px;
+  display: grid;
+  place-items: center;
 }
 
 .container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .container header a img{
-  width: 40%;
+  width: 45%;
 }
 
 .container header ul {
@@ -96,4 +99,62 @@ body {
 
 .container .photo-changer img {
   width: 50px;
+}
+
+@media (max-width: 767px) {
+
+  .container {
+    width: 80%;
+    margin-top: 15px;
+    display: grid;
+    margin: 10px auto;
+  }
+
+  .container header a img {
+    min-width: 35px;
+  }
+
+  .container section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .container section .text-content {
+    margin-top: 22px;
+    margin-right: 5px;
+  }
+
+  .container section h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .container section p {
+    font-size: 16px;
+    margin-right: 0;
+    letter-spacing: 1px;
+    min-width: 100%;
+  }
+
+  .container section a {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .container section .img img {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container .photo-changer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+  }
+
 }
